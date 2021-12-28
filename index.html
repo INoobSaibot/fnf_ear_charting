@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='./note.js'></script>
+<script src='./song.js'></script>
+<script src="./index.js"></script>
+</head>
+<body>
+    <p>Click or touch anywhere on the page to start the song and begin charting your .json file by ear</p>
+    <div>
+        <audio id='myAudio' controls>
+        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+        <source src="demoSong.ogg" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+</div>
+
+<a id="downloadAnchorElem" style="display:none"></a>
+    <button id='download'>Click me too download your .json chart file</button>
+    </body>
+
+    <script type=text/javascript>
+        $ ( document ).ready(
+            function() {
+                // setTimeout(Index.init, 1000)
+                const index = new Index();
+            }
+        );
+    </script>
+</html>
